@@ -10,7 +10,8 @@ $(document).ready(function() {
 
     $('.connect').on('click', function() {
         Twitch.login({
-            scope: ['chat_login']
+            scope: ['chat_login'],
+            force_verify: true
         });
     });
 
